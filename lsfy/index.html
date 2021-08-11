@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title>LSfy</title>
+     
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap -->
+		   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+			<!-- Biblioteca Jquery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<!-- Bootstrap e JS -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- Icon -->
+			<link rel="shortcut icon" href="_imagens/favicon.ico">
+       <!-- Css e JS do projeto -->
+      <link rel="stylesheet" href="_css/estilo.css">
+      <link rel="stylesheet" href="_css/css.css">
+      <script src="_js/script.js"></script>
+
+		</head>
+		<body style="background-color: #000000">
+			<header >
+
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ 	 <!-- Indicators -->
+ 	 <ol class="carousel-indicators">
+   		 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+   		 <li data-target="#myCarousel" data-slide-to="1"></li>
+   		 <li data-target="#myCarousel" data-slide-to="2"></li>
+ 	 </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img  class="imgHome"src="_imagens/imagem2.jpg" alt="Amigas em uma festa">
+      <div class="carousel-caption">
+          <img class="imgLogo" src="_imagens/logo.png">
+        <h1>LSFY</h1>
+        <h3>músicas para quando o LS estiver reunido.</h3>
+    </div>
+    </div>
+
+    <div class="item">
+      <img class="imgHome" src="_imagens/imagem1.jpg" alt="Amigas no Karaokê">
+      <div class="carousel-caption">
+        <img  class="imgLogo" src="_imagens/logo.png">
+        <h1>Os melhores vídeos para Karaokê</h1>
+        <h3>de Chitãozinho e Xororó aos Beatles</h3>
+    </div>
+    </div>
+
+    <div class="item">
+      <img class="imgHome" src="_imagens/imagem3.jpg" alt="Amigas no spar">
+      <div class="carousel-caption">
+          <img  class="imgLogo" src="_imagens/logo.png">
+        <h1>Playlists criadas para deixar o rolê ainda melhor</h1>
+        <h3>uma para cada momento, com diversos gêneros!</h3>
+    </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background-color: rgba(0,0,0,3);">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</header>
+
+<nav class="navbar navbar-inverse"  style="background-color: black; margin: 0px; z-index: 1000;">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#playlist"> Playlist </a></li>
+    <li><a href="#karaoke"> Karaokê </a></li>
+    <li><a href="#roleta"> Roleta </a></li>
+  </ul>
+</nav>
+
+<section id="playlist">
+<div class="parallax1">
+<aside>
+	<div class="headerS">
+		<h1 style="font-size: 20pt">Datas importates para o LS</h1>
+	</div>
+	<div class ="contagem">
+
+		<p>FALTAM</p>
+       <table>
+       	<tr><td><div class="numero" id="dia"></div></td>
+       	 <td><div class="numero" id="hora"></div></td>
+       	 <td><div class="numero" id="minuto"></div></td>
+       	 <td><div class="numero" id="segundo"></div></td>
+      	</tr>
+      	 <tr style="height:20px">
+       	 <td><p class="legenda">Dias</p></td>
+       	 <td><p class="legenda">Horas</p></td>
+       	 <td><p class="legenda">Min</p></td>
+       	 <td><p class="legenda">Seg</p></td>
+       	</tr>
+   		</table>
+	<p>PARA O CARNAVAL</p>
+</table>
+	</div>
+
+	<div class ="contagem">
+
+		<p>FALTAM</p>
+       <table>
+       	<tr><td><div class="numero" id="dia2"></div></td>
+       	 <td><div class="numero" id="hora2"></div></td>
+       	 <td><div class="numero" id="minuto2"></div></td>
+       	 <td><div class="numero" id="segundo2"></div></td>
+      	</tr>
+      	 <tr style="height:20px">
+       	 <td><p class="legenda">Dias</p></td>
+       	 <td><p class="legenda">Horas</p></td>
+       	 <td><p class="legenda">Min</p></td>
+       	 <td><p class="legenda">Seg</p></td>
+       	</tr>
+   		</table>
+	<p>PARA O ÚLTIMO DIA DE AULA</p>
+</table>
+	</div>
+</aside>
+
+<section>
+<div class="headerS">
+	<h1>Playlists </h1>
+	<h2>encontre a sequência de músicas <span style="color: rgb(255, 0, 75);"> ideal </span> para cada momento... </h2>
+</div>
+<div id="playlistsGroup" style="position: relative; top: -40px;">
+
+  <a href=" playlist1.html">
+<div class="playlistscard">
+		<h2> Não podem faltar no rolê <span class="glyphicon glyphicon-list" style=" float: right; margin-right: 20px"></span></h2>  
+		</a>
+	</div>
+
+  <a href=" playlist2.html">
+	<div class="playlistscard">
+	<h2> Pra ouvir pensando no @ <span class="glyphicon glyphicon-list" style=" float: right; margin-right: 20px"></span></h2>
+	</div>
+  </a>
+
+  <a href="playlist3.html">
+	<div class="playlistscard">
+		<h2>Essa é pra se arrumar cantando! <span class="glyphicon glyphicon-list" style="float: right; margin-right: 20px"></span></h2>
+	</div>
+  </a>
+<a href="playlist3.html">
+	<div class="playlistscard" >
+		<h2> TPM atacou... <span class="glyphicon glyphicon-list" style=" float: right; margin-right: 20px"></span></h2>  </div>
+  </a>
+
+
+</div>
+
+</div>
+</section>	
+
+
+
+<section id="karaoke">
+<div class="parallax2">
+		
+	<div id="kList">
+		<h1 style="font-size: 20pt; color: #ffffff; text-transform: uppercase; margin-bottom: 50px; margin-top: 80px;"> Playlist de karaokê</h1>
+
+  <iframe width="90%" height="45%" src="https://www.youtube.com/embed/videoseries?list=PLBMVevYO-l8RLYUDVsGZ2At-PwzPZia3N" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="headerS">
+	<h1>Karaokê </h1>
+	<h2 style="margin-top: 150px;"> hora de sentir a música de verdade! Aqui temos uma playlist com os seus karaokês favoritos. <br> Cantem como se não houvesse <span style="color: rgb(0, 0, 0);">Ceiça Silva</span> em casa! </h2>
+</div>
+
+</div>
+</section>
+
+<section id="roleta">
+	<div class="parallax3"> 
+
+    <aside>
+      <div class="vara">
+        <p class="glyphicon glyphicon-triangle-bottom" id="seta"></p>
+      
+<img  src="_imagens/roleta.png" id="ruleta" > 
+</div>
+    </aside>
+
+		<div id="roletaList" style="width: 60%">
+      <div class="headerS">
+        <h1>roleta</h1>
+        <h2>Não sabem que cantor ouvir?? <span style="color: rgb(255,0,75);"> Girem a roleta </span> e recebam uma playlist do cantor selecionado! </h2>
+        </div>
+    
+
+    <div id="playlistSelecionada"> </div>
+
+  
+</div>
+
+
+</div>
+</section>
+<button id="bntChat" class="btn" style="position: fixed; bottom: 35px; right: 35px; border-radius: 10px;"> <span class="  glyphicon glyphicon-comment" style=" float: right;"></span></button>
+
+  <div id = "chatbox">
+  <div class="headerchat" style="position: fixed">
+  <img src="_imagens/imgChat.png">
+  <h4>Joana Angelica</h4>
+  <p>Ajudante virtual</p>
+  <p>Guia do site</p>
+  </div>
+  <div id="mensagens">
+    <div class = "msg left">
+      <p>Olá, eu sou Joana Angelica e estou aqui para te ajudar! Qual é sua duvida?</p>
+    </div>
+
+
+    <div id="escolha1" class="ocult msg right">
+    <p> Joana, quem faz parte desse squad? </p> 
+    </div>
+      <div class = "ocult msg left" id="resp1">
+      <p> Então, fazem parte do grupo Débora Lavínia, Débora Beatriz, Maria Rita e Paula Maiara</p>
+    </div>
+    <div class = "ocult msg left" id="resp1-part2" >
+      <p>Link para o perfil do instragram delas: <a href="https://www.instagram.com/dlaviniasm/" target="blank">@dlaviniasm</a>,  <a href="https://www.instagram.com/debora_beatrix/" target="blank">@debora_beatrix</a>,  <a href="https://www.instagram.com/maritafp/" target="blank">@maritafp</a>,  <a href="https://www.instagram.com/paulamaiara19121/" target="blank">@paulamaiara19121</a></p>
+    </div>
+
+    <div id="escolha2" class="ocult msg right">
+    <p> Qual música toca mais vezes quando elas estão juntas?</p> 
+    </div>
+
+    <div class = "ocult msg left" id="resp2">
+      <p> Hmm.. Pergunta difícil essa! Elas escutam de tudo, mas eu chutaria essa aqui... </p>
+      <iframe width="90%" height="auto" src="https://www.youtube.com/embed/ePjtnSPFWK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div id="escolha3" class="ocult msg right">
+      <p> Joana, você pode me mostrar fotos das meninas reunidas?</p> 
+    </div>
+    <div class = "ocult msg left" id="resp3">
+      <p> Claro que sim! Aqui estão algumas fotos! </p>
+      <!-- mini galeria -->
+      <div class="row">
+        <div class="column">
+          <img src="_imagens/img1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor ftP">
+        </div>
+        <div class="column">
+          <img src="_imagens/img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor ftP">
+        </div>
+        </div>
+        <div class="row">
+        
+        <div class="column">
+          <img src="_imagens/img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor ftP">
+        </div>
+        <div class="column">
+          <img src="_imagens/img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor ftP">
+        </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="_imagens/img1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="_imagens/img2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="_imagens/img3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="_imagens/img4.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="row" style="align-content: center; background-color: blacksss">
+            <img class="demo cursor" src="_imagens/img1.jpg" style="width:150px; display: inline; " onclick="currentSlide(1)">
+          
+            <img class="demo cursor" src="_imagens/img2.jpg" style="width:150px; display: inline;"onclick="currentSlide(2)" >
+    
+            <img class="demo cursor" src="_imagens/img3.jpg" style="width:150px; display: inline;" onclick="currentSlide(3)">
+
+            <img class="demo cursor" src="_imagens/img4.jpg" style="width:150px; display: inline;" onclick="currentSlide(4)">
+          </div>
+        </div>
+      </div>
+      <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    
+  
+    <div id="escolha4" class="ocult msg right">
+    <p> Ok, quero dar sugestão de música para as meninas</p> 
+    </div>
+      <div class = "ocult msg left" id="resp4">
+      <p> Simples, basta escrever o nome da música aqui: </p>
+s3
+      <form  id="formulario" action="/s3pagSucesso" method="post" name= "musicas"  netlify>
+        <div class="field" style="margin: 15px;"> <input type="text" name="musica" placeholder="Nome/trecho da música..."></div>
+        <button class="btn" style="color: #ffffff" type="submit">Enviar</button>
+      </form>
+    </div>
+    </div>
+
+<div id="respostabox">
+  <p> Escolha sua pergunta...</p>
+  <span class="glyphicon glyphicon-chevron-up" style=" float: right; margin-right: 10px;"></span>
+</div>
+<div id="perguntas" style="top: 200px; display: none;" >
+       <ul id='dropup1' class='dropup1-content'>
+          <li id="opc1"> Quem faz parte do LS?</li>
+          <li id="opc2" > Música do grupo </li>
+          <li id="opc3"> Fotos do grupo </li>
+          <li id="opc4"> Sugestão de música </li>
+       </ul>
+      </div>
+</div>
+<script>
+    $(document).ready(function() {
+    $('#chatbox').attr({scrollTop: $("#chatbox").attr('scrollHeight')});
+    });
+// abrir o chat
+  $(document).ready(function(){
+  $("#bntChat").click(function(){
+    $("#chatbox").toggle();
+  });
+});
+  // aparecer as perguntas
+  $(document).ready(function(){
+  $("#respostabox").hover(function(){
+    $("#perguntas").toggle();
+  });
+});
+  // manter a caixa de perguntas aberta
+  $(document).ready(function(){
+  $("#perguntas").hover(function(){
+    $("#perguntas").toggle();
+  });
+});
+  // respostas
+  $(document).ready(function(){
+  $("#opc1").click(function(){
+    $("#escolha1").fadeIn("fast");
+    $("#resp1").show(800);
+    $("#resp1-part2").show(1000);
+  });
+});
+$(document).ready(function(){
+  $("#opc2").click(function(){
+    $("#escolha2").fadeIn("fast");
+    $("#resp2").fadeIn("1000");
+
+    $('#mensagens').scrollTop(350);
+  });
+});
+$(document).ready(function(){
+  $("#opc3").click(function(){
+    $("#escolha3").fadeIn("fast");
+    $("#resp3").fadeIn("1000");
+
+    $('#mensagens').scrollTop(500);
+  });
+});
+
+$(document).ready(function(){
+  $("#opc4").click(function(){
+    $("#escolha4").fadeIn("fast");
+    $("#resp4").fadeIn("1000");
+
+    $('#mensagens').scrollTop(550);
+  });
+});
+
+
+</script>
+
+<footer>
+  &#169 2019 LS | Autoria Web
+
+</footer>
+  <!-- Script da roleta -->
+<script>
+  const ruleta = document.querySelector("#ruleta");
+
+
+ruleta.addEventListener("click",girar);
+
+
+function girar(){
+        let rand = Math.random()*7200; 
+        calcular(rand);
+}
+
+function calcular(rand){
+    valor = rand / 360;
+    valor = (valor - parseInt(valor.toString().split(".")[0])) * 360;
+    ruleta.style.transform = "rotate("+rand+"deg)";
+    setTimeout(()=>{
+    switch(true){
+        case valor > 0 && valor <= 45:
+        //potygura bardo
+                 document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PL1xK5BHa9-GzsZZ2jsDeRCv51Fd4bnbOH' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+            break;
+        case valor > 45 && valor <= 90:
+
+        // Wesley safadao
+
+            document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PL73iAmm7by8B9Yus_bApkve64Qxf6CTLo' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+            break;
+            //sandy e juninor
+        case valor > 90 && valor <= 135:
+        document.getElementById("playlistSelecionada").innerHTML = (" <iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLKUm_N_A45HGe9zMkrXjW-S9x00u-228s' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+       
+            break; 
+
+        case valor > 135 && valor <= 180:
+        // chitaozinho e xoxoro
+               document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLY7dXYKCL2hbP6brgC--mtF-jkYLYjtbk' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+            break;
+        case valor > 180 && valor <= 225:
+        // duda beat
+                document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLPENJRk9CyujiZ60b33ZwScyOU0bJMmRV' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+            break;
+        case valor > 225 && valor <= 270:
+          //gusttavo lima
+                 document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLJeRqGrP3sbTUf0fuXY2c51kMtc05aKYO' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+            break;
+        case valor > 270 && valor <= 315:
+        //Calcinha preta
+          document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLmAiKXpw0Nf3Uj5d6JFee0ZqUgW-xSSFs' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+           
+            break;
+        case valor > 315 && valor <= 360:
+        //Humberto Gessinger
+           document.getElementById("playlistSelecionada").innerHTML = ("<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLGBaBB6I8zRjKx_69b1hLHi0mq49hehlR' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+
+
+            break;
+    }},5000);
+}
+</script>
+		</body>
+	</html>
